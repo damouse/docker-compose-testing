@@ -3,7 +3,7 @@ from common import lib
 
 
 def main():
-    print("Core started")
+    print("Core startedd")
     print(lib.piddle())
     print("Core done")
 

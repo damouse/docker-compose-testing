@@ -23,7 +23,8 @@ RUN pip install -r /app/snowbot-requirements.txt
 # Pathhacking so we don't have to install common
 ENV PYTHONPATH $PYTHONPATH:/app/common/
 
-ADD common /app/common
-ADD snowbot /app/snowbot
+# Use this for PRODUCTION, since it performs the copy immediately but doesn't link outside of the container
+# COPY common /app/common
+# COPY snowbot /app/snowbot
 
-ENTRYPOINT python3.6 /app/snowbot/snowbot/main.py
+# ENTRYPOINT python3.6 /app/snowbot/snowbot/main.py
