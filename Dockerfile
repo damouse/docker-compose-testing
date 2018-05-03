@@ -1,3 +1,12 @@
+# We might not be able to get away from using ubuntu:16.04 as a base, but 
+# the ubuntu image is 571MB vs alpine's 97.4MB. Is there ubuntu functionality we need?
+
+# python:3.6-slim is 167M and has bash, along with a bunch of other stuff
+# FROM python:3.6-slim
+
+# If we do use alpine then we don't need the python and pip deps, below
+# FROM python:3.6-alpine
+
 FROM ubuntu:16.04
 
 # Python

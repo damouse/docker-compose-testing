@@ -3,4 +3,4 @@ pytest_compose:
   volumes:
     - ./common/:/app/common
     - ./snowbot/:/app/snowbot
-  command: /usr/bin/python3.6 /app/snowbot/snowbot/main.py
+  command: python3.6 /app/snowbot/snowbot/main.py
